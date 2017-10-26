@@ -6,12 +6,12 @@ National Council of Education Research and Training conducts yearly National Ach
 2. nas-labels.csv : details of each colum
 
 ```
-      Column	Name	        Level	Rename
-87	Subjects	Language	      L	  Language
-88	Subjects	Mathematics	    M	  Mathematics
-89	Subjects	None	          0	  None
+      Column	Name	        Level  Rename
+87	Subjects	Language        L	  Language
+88	Subjects	Mathematics	M	  Mathematics
+89	Subjects	None	        0	  None
 90	Subjects	Science	        S	  Science
-91	Subjects	Social Science	O	  Social Science
+91	Subjects	Social Science  O	  Social Science
 
 ```
 3. nas-pupil-marks.csv : actual servey dataset consist of feaures of 
