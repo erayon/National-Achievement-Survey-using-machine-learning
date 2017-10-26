@@ -5,7 +5,7 @@ National Council of Education Research and Training conducts yearly National Ach
 1. nas-columns.csv : consist of details names of columns and their type
 2. nas-labels.csv : details of each colum
 
-'''
+```
       Column	Name	        Level	Rename
 87	Subjects	Language	      L	  Language
 88	Subjects	Mathematics	    M	  Mathematics
@@ -13,9 +13,10 @@ National Council of Education Research and Training conducts yearly National Ach
 90	Subjects	Science	        S	  Science
 91	Subjects	Social Science	O	  Social Science
 
-'''
+```
 3. nas-pupil-marks.csv : actual servey dataset consist of feaures of 
-'''
+
+```
 ['STUID', 'State', 'District', 'Gender', 'Age', 'Category',
 'Same language', 'Siblings', 'Handicap', 'Father edu', 'Mother edu',
 'Father occupation', 'Mother occupation', 'Below poverty',
@@ -34,5 +35,4 @@ National Council of Education Research and Training conducts yearly National Ach
 ,'Solve science problems', 'Express science views', 'Watch TV',
 'Read magazine', 'Read a book', 'Play games', 'Help in household',
 'Maths %', 'Reading %', 'Science %', 'Social %']
-
-'''
+```
