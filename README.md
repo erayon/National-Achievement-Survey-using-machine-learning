@@ -6,7 +6,7 @@ National Council of Education Research and Training conducts yearly National Ach
 2. nas-labels.csv : details of each colum
 
 ```
-      Column	Name	        Level  Rename
+        Column	         Name	      Level       Rename
 87	Subjects	Language        L	  Language
 88	Subjects	Mathematics	M	  Mathematics
 89	Subjects	None	        0	  None
