@@ -36,3 +36,6 @@ National Council of Education Research and Training conducts yearly National Ach
 'Read magazine', 'Read a book', 'Play games', 'Help in household',
 'Maths %', 'Reading %', 'Science %', 'Social %']
 ```
+
+# Three Question to solve using this survey Dataset
+## 1. What influences students performance the most?
