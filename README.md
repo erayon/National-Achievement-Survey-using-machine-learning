@@ -88,8 +88,8 @@ Remove STUDID, District
 
 ### Step 2. and Step 3. and Step 4. are same as above
 ### step 5.
-Create a method which takes table and statename as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states.
-
+Create a method which takes table and statename as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states. Using as Thresholding.
+![Alt text](im1.png?raw=true "states") 
 
 
 
