@@ -80,8 +80,15 @@ after fit the model its gives the feture_importance
 
 
 
+## 2. How do boys and girls perform across states? (analysis2.ipynb)
+Based on the feature or attributes performance of boys and girls student state wise.
 
+### Step 1.
+Remove STUDID, District
 
+### Step 2. and Step 3. and Step 4. are same as above
+### step 5.
+Create a method which takes table and statename as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states.
 
 
 
