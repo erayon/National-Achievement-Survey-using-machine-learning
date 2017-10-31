@@ -75,7 +75,8 @@ Xdata consist of remaning attributes.
 
 ### Step 6.
 Find the feature importance using ExtraTreesClassfire in sklearn.ensemble.
-after fit the model its gives the feture_importance 
+after fit the model its gives the feture_importance
+![Alt text](influence.png?raw=true "Segmented Image") 
 
 
 
