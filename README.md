@@ -38,5 +38,17 @@ National Council of Education Research and Training conducts yearly National Ach
 ```
 
 # Three Question to solve using this survey Dataset
-## 1. What influences students performance the most?
-Based on the feature or attributes which attributes influance student most on their overall performance 
+## 1. What influences students performance the most? (analysis1.ipynb)
+Based on the feature or attributes which attributes influance student most on their overall performance. here I use only 'nas-pupil-marks.csv' dataset.
+### Step 1.
+Remove STUDID, State and District 
+### step 2.
+Change Categorical data to numerical from columns 'Use Computer' and 'Subjects' by maping method in pandas
+```
+
+nd['Use computer'] = nd['Use computer'].map({"Yes":1,"No":0})
+nd['Subjects'] = nd['Subjects'].map({'L':1, 'S':2, 'O':3, 'M':4, '0':0})
+
+```
+
+
