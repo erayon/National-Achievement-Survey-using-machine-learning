@@ -91,7 +91,12 @@ Remove STUDID, District
 Create a method which takes table and statename as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states. Using as Thresholding.
 ![Alt text](im1.png?raw=true "states") 
 
+## 3. Do students from South Indian states really excel at Math and Science? (analysis3.ipynb)
 
+### Step 1.
+Remove STUDID, District
+### Step 2. and Step 3. and Step 4. are same as above
+### step 5.
 
 
 
