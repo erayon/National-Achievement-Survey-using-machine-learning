@@ -42,13 +42,40 @@ National Council of Education Research and Training conducts yearly National Ach
 Based on the feature or attributes which attributes influance student most on their overall performance. here I use only 'nas-pupil-marks.csv' dataset.
 ### Step 1.
 Remove STUDID, State and District 
-### step 2.
+### Step 2.
 Change Categorical data to numerical from columns 'Use Computer' and 'Subjects' by maping method in pandas
 ```
-
 nd['Use computer'] = nd['Use computer'].map({"Yes":1,"No":0})
 nd['Subjects'] = nd['Subjects'].map({'L':1, 'S':2, 'O':3, 'M':4, '0':0})
+```
+### Step 3.
+Preprossing the Dataset, remove nan value using sklearn.preprocessing Imputer
+### Step 4.
+Now take math, reading, Science and find the Performance and find the Thresholding value by which we can classify the student.
+If a student performance greater than equal the threshold then it consider as a best (1) student and if performance is less than the threshold then its consider as poor (0) student.
 
 ```
+math    = np.array(data["Maths %"]).astype("float")
+reading = np.array(data["Reading %"]).astype("float")
+Science = np.array(data["Science %"]).astype("float")
+Social  = np.array(data["Social %"]).astype("float")
+
+performance = (math+reading+Science+Social)
+
+bestPerformance = np.max(performance)
+poorPerformance = np.min(performance)
+avgPerformance  = np.average(performance)
+
+Threshold = bestPerformance-avgPerformance
+
+```
+
+
+
+
+
+
+
+
 
 
