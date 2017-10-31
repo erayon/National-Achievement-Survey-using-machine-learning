@@ -51,8 +51,8 @@ nd['Subjects'] = nd['Subjects'].map({'L':1, 'S':2, 'O':3, 'M':4, '0':0})
 ### Step 3.
 Preprossing the Dataset, remove nan value using sklearn.preprocessing Imputer
 ### Step 4.
-Now take math, reading, Science and find the Performance and find the Thresholding value by which we can classify the student.
-If a student performance greater than equal the threshold then it consider as a best (1) student and if performance is less than the threshold then its consider as poor (0) student.
+Now take math, reading, Science and Social and find the Performance and find the Thresholding value by which we can classify the student.
+If a student performance greater than equal the threshold then it consider as a best (1) student and if performance is less than the threshold then its consider as poor (0) student. Create a new column name lable based on that.
 
 ```
 math    = np.array(data["Maths %"]).astype("float")
@@ -69,6 +69,14 @@ avgPerformance  = np.average(performance)
 Threshold = bestPerformance-avgPerformance
 
 ```
+### Step 5.
+Split the Dataset as a lable and Xdata such a way that label consist of 0 and 1 means best and poor. 
+Xdata consist of remaning attributes.
+
+### Step 6.
+Find the feature importance using ExtraTreesClassfire in sklearn.ensemble.
+after fit the model its gives the feture_importance 
+
 
 
 
