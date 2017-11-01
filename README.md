@@ -51,18 +51,14 @@ pip install plotly
 # Three Question to solve using this survey Dataset
 ## 1. What influences students performance the most? (analysis1.ipynb)
 Based on the feature or attributes which attributes influance student most on their overall performance. here I use only 'nas-pupil-marks.csv' dataset.
-### Step 1.
-Remove STUDID, State and District 
-### Step 2.
-Change Categorical data to numerical from columns 'Use Computer' and 'Subjects' by maping method in pandas
+1. Remove STUDID, State and District 
+2. Change Categorical data to numerical from columns 'Use Computer' and 'Subjects' by maping method in pandas
 ```
 nd['Use computer'] = nd['Use computer'].map({"Yes":1,"No":0})
 nd['Subjects'] = nd['Subjects'].map({'L':1, 'S':2, 'O':3, 'M':4, '0':0})
 ```
-### Step 3.
-Preprossing the Dataset, remove nan value using sklearn.preprocessing Imputer
-### Step 4.
-Now take math, reading, Science and Social and find the Performance and find the Thresholding value by which we can classify the student.
+3. Preprossing the Dataset, remove nan value using sklearn.preprocessing Imputer
+4. Now take math, reading, Science and Social and find the Performance and find the Thresholding value by which we can classify the student.
 If a student performance greater than equal the threshold then it consider as a best (1) student and if performance is less than the threshold then its consider as poor (0) student. Create a new column name lable based on that.
 
 ```
@@ -80,12 +76,9 @@ avgPerformance  = np.average(performance)
 Threshold = bestPerformance-avgPerformance
 
 ```
-### Step 5.
-Split the Dataset as a lable and Xdata such a way that label consist of 0 and 1 means best and poor. 
+5. Split the Dataset as a lable and Xdata such a way that label consist of 0 and 1 means best and poor. 
 Xdata consist of remaning attributes.
-
-### Step 6.
-Find the feature importance using ExtraTreesClassfire in sklearn.ensemble.
+6. Find the feature importance using ExtraTreesClassfire in sklearn.ensemble.
 after fit the model its gives the feture_importance
 ![Alt text](influence.png?raw=true "influence") 
 
@@ -94,29 +87,25 @@ after fit the model its gives the feture_importance
 ## 2. How do boys and girls perform across states? (analysis2.ipynb)
 Based on the feature or attributes performance of boys and girls student state wise.
 
-### Step 1.
-Remove STUDID, District
+1. Remove STUDID, District
 
 ### Step 2. and Step 3. and Step 4. are same as above
-### step 5.
-Create a method which takes table and statename as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states. Using as Thresholding.
+5. Create a method which takes table and statename as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states. Using as Thresholding.
 ![Alt text](im1.png?raw=true "states") 
 
 ## 3. Do students from South Indian states really excel at Math and Science? (analysis3.ipynb)
-
-### Step 1.
-Remove STUDID, District
+1. Remove STUDID, District
 ### Step 2. and Step 3. and Step 4. are same as above
-### step 5.
-Create a array southInd = ['AP','GA','KA','KL','PY','TN'] 
+5. Create a array southInd = ['AP','GA','KA','KL','PY','TN'] 
+```
 'AP' : Andhra Pradesh
 'GA' : Goa
 'KA' : Karnataka
 'KL' : Kerala
 'PY' : Pondicherry
 'TN' : Tamil Nadu
-
-And same as above create a Create a method which takes table and southInd array as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states. Using as Thresholding.
+```
+6. And same as above create a Create a method which takes table and southInd array as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states. Using as Thresholding.
 ![Alt text](im2.png?raw=true "southinda") 
 
 
