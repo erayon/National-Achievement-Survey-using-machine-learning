@@ -1,6 +1,17 @@
 # National-Achievement-Survey-using-machine-learning
 National Council of Education Research and Training conducts yearly National Achievement Survey. provided the data of Class VIII students from 2014.
 
+
+# Prequisition
+
+```
+pip install pandas
+pip install numpy
+pip install sklearn
+pip install plotly
+
+```
+
 ## Inside the Dataset
 1. nas-columns.csv : consist of details names of columns and their type
 2. nas-labels.csv : details of each colum
@@ -97,6 +108,31 @@ Create a method which takes table and statename as an argument and return perfor
 Remove STUDID, District
 ### Step 2. and Step 3. and Step 4. are same as above
 ### step 5.
+Create a array southInd = ['AP','GA','KA','KL','PY','TN'] 
+'AP' : Andhra Pradesh
+'GA' : Goa
+'KA' : Karnataka
+'KL' : Kerala
+'PY' : Pondicherry
+'TN' : Tamil Nadu
+
+And same as above create a Create a method which takes table and southInd array as an argument and return performance of girls and boys in that state, then find out best girl, best boy, poor girl, poor boy performance over states. Using as Thresholding.
+![Alt text](im2.png?raw=true "southinda") 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
